@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Alpaca } from './alpaca.interface';
 import { AlpacaService } from './alpaca.service';
 
@@ -9,11 +9,7 @@ import { AlpacaService } from './alpaca.service';
 })
 export class AlpacaComponent implements OnInit {
   constructor(private alpacaService: AlpacaService) {}
+  @Input() alpaca: Alpaca | undefined;
 
-  alpaca: Alpaca | undefined;
-
-  ngOnInit(): void {
-    this.alpaca = this.alpacaService.getDefaultAlpaca();
-    console.log(this.alpaca.eyesUrl);
-  }
+  ngOnInit(): void {}
 }

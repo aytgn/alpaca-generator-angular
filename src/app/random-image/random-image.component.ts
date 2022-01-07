@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Alpaca } from '../shared/alpaca/alpaca.interface';
+import { AlpacaService } from '../shared/alpaca/alpaca.service';
 
 @Component({
   selector: 'app-random-image',
@@ -6,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./random-image.component.css'],
 })
 export class RandomImageComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+  constructor(private alpacaService: AlpacaService) {}
+  @Input() alpaca: Alpaca | undefined;
+  ngOnInit(): void {
+    this.alpaca = this.alpacaService.getRandomAlpaca();
+  }
 }
