@@ -5,6 +5,7 @@ export interface Alpaca {
   legUrl: string;
   mouthUrl: string;
   neckUrl: string;
+  noseUrl: string;
   accessoriesUrl?: string;
   name?: string;
   backgroundUrl?: string;

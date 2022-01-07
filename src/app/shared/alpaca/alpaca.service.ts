@@ -18,8 +18,9 @@ export class AlpacaService {
       legUrl: '',
       mouthUrl: '../../assets/mouth/default.png',
       neckUrl: '../../assets/neck/default.png',
-      accessoriesUrl: '',
+      accessoriesUrl: '../../assets/leg/default.png',
       name: 'default',
+      noseUrl: '../../assets/nose.png',
       backgroundUrl: '',
     };
     return this._alpaca;
