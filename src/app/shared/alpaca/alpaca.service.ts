@@ -15,13 +15,13 @@ export class AlpacaService {
       eyesUrl: '../../assets/eyes/default.png',
       earsUrl: '../../assets/ears/default.png',
       hairUrl: '../../assets/hair/default.png',
-      legUrl: '',
+      legUrl: '../../assets/leg/default.png',
       mouthUrl: '../../assets/mouth/default.png',
       neckUrl: '../../assets/neck/default.png',
-      accessoriesUrl: '../../assets/leg/default.png',
+      accessoriesUrl: '../../assets/accessories/headphone.png',
       name: 'default',
       noseUrl: '../../assets/nose.png',
-      backgroundUrl: '',
+      backgroundUrl: '../../assets/backgrounds/blue50.png',
     };
     return this._alpaca;
   }
