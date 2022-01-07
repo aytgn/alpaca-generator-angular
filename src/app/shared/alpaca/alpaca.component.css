@@ -1,0 +1,26 @@
+.earsRow {
+}
+
+.hairRow {
+  margin-top: -10.4em;
+}
+.neckRow {
+  margin-top: -10em;
+}
+.mouthRow {
+  margin-top: -10.4em;
+}
+
+.eyesRow {
+  margin-top: -10em;
+}
+
+.alpacaContainer {
+  width: 200px;
+  height: 200px;
+}
+
+.alpacaImg {
+  width: 100%;
+  height: 100%;
+}

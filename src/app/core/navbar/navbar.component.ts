@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
   constructor(private router: Router) {}
 
-  navigate() {
-    this.router.navigate(['random-image']);
+  navigate(url: string) {
+    this.router.navigate([url]);
   }
 
   ngOnInit(): void {}
